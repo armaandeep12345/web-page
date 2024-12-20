@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apply for job opportunities through our online application form. Submit your details, upload your resume, and take the first step toward your new career.">
+    <title>Job Application Form</title>
+
+    <style>
+
+.sitename {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* Change this to your desired color */
+    margin: 0; /* Remove default margin from the h1 */
+}
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #ffffff; /* White background for the form */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            padding: 20px;
+        }
+
+        h2 {
+            color: #ff6600; /* Orange color for heading */
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .table {
+            width: 100%;
+            margin-bottom: 0;
+        }
+
+        .table th, .table td {
+            padding: 10px;
+            vertical-align: middle;
+            text-align: left;
+        }
+
+        .form-label {
+            font-weight: bold;
+            color: #555555; /* Dark grey text for labels */
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #cccccc; /* Light grey border */
+            border-radius: 5px;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-control:focus {
+            border-color: #ff6600; /* Orange border on focus */
+        }
+
+        .input-group-text {
+            background-color: #ff6600; /* Orange background */
+            color: #ffffff; /* White text */
+            border: none;
+        }
+
+        .btn-warning {
+            background-color: #ff6600; /* Orange button */
+            border: none;
+            color: #ffffff; /* White text */
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-warning:hover {
+            background-color: #e65c00; /* Darker orange on hover */
+        }
+
+        .form-text {
+            color: #888888; /* Light grey for helper text */
+            font-size: 0.9em;
+        }
+
+        .table tr:hover {
+            background-color: #f9f9f9; /* Light grey hover effect for rows */
+        }
+
+    </style>
+</head>
+<body>
+  <div class="container mt-6">
+        <form method="post" enctype="multipart/form-data">
+            <h2 class="text-center mb-4">Job Application Form</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Field</th>
+                        <th scope="col">Input</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Applicant Name -->
+                    <tr>
+                        <td><label for="applicantName" class="form-label">Name</label></td>
+                        <td><input type="text" class="form-control" name="name" id="applicantName" placeholder="Enter your name" required></td>
+                    </tr>
+                    <!-- Email -->
+                    <tr>
+                        <td><label for="email" class="form-label">Email</label></td>
+                        <td><input type="email" class="form-control" name="email" id="email" placeholder="Enter your email" required></td>
+                    </tr>
+                    <!-- Phone -->
+                    <tr>
+                        <td><label for="phone" class="form-label">Phone</label></td>
+                        <td><input type="tel" class="form-control" name="phone" id="phone" placeholder="Enter your phone number" required></td>
+                    </tr>
+                    <!-- Position -->
+                    <tr>
+    <td><label for="position" class="form-label">Position</label></td>
+    <td>
+        <select class="form-control" name="position" id="position" required>
+            <option value="" disabled selected>Select the position you are applying for</option>
+            <option value="developer">Developer</option>
+            <option value="designer">Designer</option>
+            <option value="manager">Manager</option>
+            <option value="analyst">Analyst</option>
+            <option value="intern">Intern</option>
+        </select>
+    </td>
+</tr>
+
+                    <!-- File Input for Picture -->
+                    <tr>
+                        <td><label for="pic" class="form-label">Picture</label></td>
+                        <td>
+                            <input type="file" class="form-control" name="pic" id="pic" required>
+                            <div class="form-text">Upload your picture</div>
+                        </td>
+                    </tr>
+                    <!-- Message -->
+                    <tr>
+                        <td><label for="message" class="form-label">Message</label></td>
+                        <td>
+                            <textarea class="form-control" name="message" id="message" rows="4" placeholder="Write a brief message or cover letter"></textarea>
+                        </td>
+                    </tr>
+                    <!-- Submit Button -->
+                    <tr>
+                        <td colspan="2" class="text-center">
+                            <button type="submit" name="apply" class="btn btn-warning w-100">Apply</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+
+   
+</body>
+</html>
