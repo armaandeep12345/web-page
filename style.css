@@ -440,7 +440,7 @@ input:required {
     margin-bottom: 5px;
     display: block;
     line-height: 1.2; }
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 440px) {
       .section-heading h2 {
         font-size: 24px; } }
   .section-heading p {
@@ -448,6 +448,32 @@ input:required {
   .section-heading.white p,
   .section-heading.white h2 {
     color: #ffffff; }
+
+
+  
+  .welcome-area .welcome-slides img {
+      width: 100%;
+      height: 900px;
+      display: block;
+  }
+  @media screen and (max-width: 440px) {
+    .welcome-area .welcome-slides .single-welcome-slide img {
+        width: 100%; /* Adjust width for smaller screens */
+        height: 200px; /* Ensure image is responsive */
+    }
+}@media screen and (max-width: 440px) {
+  .welcome-area .welcome-slides .single-welcome-slide img {
+      width: 200%; /* Ensure full width on small screens */
+      height: auto; /* Maintain the aspect ratio */
+  }
+  
+  /* Additional style for portrait images */
+  .welcome-area .welcome-slides .single-welcome-slide img {
+      max-width: 100%; /* Full width for portrait images */
+      height: auto; /* Maintain aspect ratio */
+  }
+}
+
 
 /* :: 5.0 Backtotop CSS */
 #scrollUp {
@@ -1687,7 +1713,7 @@ input:required {
 
 .contact-area .contact-title {
   font-size: 56px; }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 440px) {
     .contact-area .contact-title {
       font-size: 30px; } }
 .contact-area .contact-info p {
@@ -1776,3 +1802,10 @@ input:required {
   margin-top: -450px;
 }
 
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .single-welcome-slide {
+      height: auto; /* Adjust height to fit content properly on mobile */
+      background-position: center top; /* Adjust background positioning if needed */
+  }
+}
