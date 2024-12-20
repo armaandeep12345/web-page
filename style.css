@@ -174,7 +174,8 @@ ul {
     background-color: rgba(0, 0, 0, 0.4); }
 
 .bg-img {
-  background-position: center center !important;
+  height: 500px; /* Adjust the height as needed */
+  width: 100%; /* Adjust the width as needed */
   background-size: cover !important;
   background-repeat: no-repeat !important; }
 
@@ -1698,9 +1699,7 @@ input:required {
     .contact-area .contact-info a {
       font-size: 14px; } }
 
-#map {
-  height: 600px;
-  width: 100%; }
+
   @media only screen and (max-width: 767px) {
     #map {
       height: 400px; } }
@@ -1711,3 +1710,69 @@ input:required {
     border-radius: 10px; }
 
 /*# sourceMappingURL=style.css.map */
+/* Contact Section Styling */
+#contact {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+#contact h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form .form-control {
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.contact-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info ul li {
+  margin-bottom: 10px;
+}
+
+.contact-info ul li a {
+  color: #007bff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.contact-info ul li a i {
+  font-size: 18px;
+}
+/* Map Section Styling */
+.map-area {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+}
+
+#map {
+  width: 50%;
+  height: 400px; /* Set a fixed height for the map */
+  border-radius: 8px; /* Optional: for rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow effect */
+  margin-left: 600px;
+  margin-top: -450px;
+}
+
